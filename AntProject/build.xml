@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="run" name="java compile and run">
+
+<target name="run" depends="compile">
+<java classname="com.sar.ant.Demo" >
+ <classpath path ="stage" />
+
+</java>
+
+
+</target>
+<target  name="compile">
+  <javac includeantruntime="false"  compiler="modern" srcdir="./src" destdir="stage"/>
+
+</target>
+</project>
